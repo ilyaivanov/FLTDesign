@@ -1,6 +1,5 @@
 node_modules
 bower_components
-zip-leveranse/*
-!zip-leveranse/01_forside.jpg
+zip-leveranse
 .idea/workspace.xml
 .idea/workspace_old.xml
