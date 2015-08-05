@@ -1,48 +1,37 @@
-@import "variables.less";
-
 .navbar-brand,
 .navbar-nav li a {
-  line-height: @header-height;
-  height: @header-height;
+  line-height: 77px;
+  height: 77px;
   padding-top: 0;
 }
-
 .navbar {
   background-color: white;
   border: none;
 }
-
 .flt-logo {
   margin-top: 10px;
   vertical-align: middle;
   width: 242px;
   height: auto;
 }
-
 .flt-menu-item {
   width: 106px;
 }
-
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus {
-  background-color: @active-menu-color;
+  background-color: #c1192a;
   color: white;
 }
-
 .navbar-default .navbar-nav > .active > a:hover {
-  background-color: lighten(@active-menu-color, 5%);
+  background-color: #d81c2f;
   color: white;
 }
-
 .flt-menu-icon {
   padding-right: 5px;
 }
-
 .navbar-right {
   padding-right: 50px;
 }
-
 .navbar {
   margin-bottom: 0;
 }
-
