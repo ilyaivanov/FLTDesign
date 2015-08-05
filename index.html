@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="b-navigator">
+    <input id="opacitySlider" type="range" min="0" max="100"/>
+
+</div>
+<div class="container">
+    <div class="row">
+        <img class="designImage text-center" src="zip-leveranse/01_forside.jpg" alt=""/>
+    </div>
+</div>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+<script>
+    $(function () {
+        var slider = $("#opacitySlider");
+        var image = $(".designImage");
+
+        slider.on("input change", updateOpacity);
+        function updateOpacity() {
+            var opacity = slider.val() / 100;
+            image.css("opacity", opacity);
+        }
+
+        updateOpacity();
+    })
+</script>
+</body>
+</html>
