@@ -1,11 +1,14 @@
 .designImage {
     width: 1200px; /* you can use % */
     height: auto;
-
+    position: absolute;
+    z-index: 10000;
+    pointer-events: none;
 }
 
+
 .b-navigator{
-    z-index: 100;
+    z-index: 10001;
     box-shadow: #A3A3A3 0 0 2px;
     background-color: #fafafa;
     padding: 6px 7px 5px;
