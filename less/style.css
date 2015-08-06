@@ -1,0 +1,9 @@
+.flt-news-icon {
+  padding-left: 25px;
+}
+.flt-list-item {
+  border: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 0 !important;
+}
