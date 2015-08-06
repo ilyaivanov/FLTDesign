@@ -7,3 +7,11 @@
   border-bottom: 1px solid black;
   border-radius: 0 !important;
 }
+.flt-student-box {
+  background-color: #1B97A1;
+  color: white;
+}
+.flt-student-body{
+  padding-left: 20px;
+  padding-top: 20px;
+}
