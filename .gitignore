@@ -1,5 +1,2 @@
 node_modules
-zip-leveranse/*
-!zip-leveranse/01_forside.jpg
-.idea/workspace.xml
-.idea/workspace_old.xml
+.idea

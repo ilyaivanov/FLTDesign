@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="bower_components/bootstrap/less/bootstrap.css"/>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
     <link rel="stylesheet" href="less/design-style.css"/>
     <link rel="stylesheet" href="less/panels.css"/>
@@ -15,25 +15,14 @@
 <!--opacity slider-->
 <div class="b-navigator">
     <div class="row">
-        <form class="form-inline">
-            <div class="form-group">
-                <div class="input-group">
-                    <div class="input-group-addon">HTML</div>
-                    <input class="form-control" id="opacitySlider" type="range" min="0" max="100" value="0"/>
-
-                    <div class="input-group-addon">Mockup</div>
-                </div>
-            </div>
-        </form>
+       <button class="btn" id="mockupButton">Hide mockup</button>
     </div>
 </div>
 <!--end of opacity slider-->
 
-
+<div class="s"><img class="mockimage" src="mockups/Desktop_forside.jpg"></div>
 <div class="container">
-    <div class="image">
-        <img class="designImage text-center" src="zip-leveranse/01_forside.jpg" alt=""/>
-    </div>
+
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default">
@@ -46,7 +35,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#"><img class="flt-logo" src="media/logo-small.png" alt=""/></a>
+            <a class="navbar-brand vcenter" href="#"><img class="img-responsive"  src="Ferdig_design_GFX/Desktop_logo.png" alt=""/></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
@@ -260,17 +249,26 @@
 
 <script>
     $(function () {
-        var slider = $("#opacitySlider");
-        var image = $(".designImage");
+        var button = $("#mockupButton");
+        var showing = true;
 
-        slider.on("input change", updateOpacity);
-        function updateOpacity() {
-            var opacity = slider.val() / 100;
-            image.css("opacity", opacity);
-        }
-
-        updateOpacity();
+        button.on("click", function () {
+            console.log(showing);
+            showing = !showing;
+            if(showing)
+            {
+                $(".s").show();
+                button.text("Hide mockup");
+            }
+            else
+            {
+                $(".s").hide();
+                button.text("Show mockup");
+            }
+        })
     })
+
+
 </script>
 </body>
 </html>

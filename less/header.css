@@ -1,8 +1,7 @@
 .navbar-brand,
 .navbar-nav li a {
-  line-height: 77px;
-  height: 77px;
-  padding-top: 0;
+  line-height: 109px;
+  height: 109px;
 }
 .navbar {
   background-color: white;
