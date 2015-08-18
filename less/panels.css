@@ -3,12 +3,12 @@
   border: none;
 }
 .flt-page-body {
-  margin-top: 20px;
-  padding-right: 140px;
-  padding-left: 140px;
+  margin-top: 48px;
+  padding-right: 215px;
+  padding-left: 215px;
 }
 .panel-body {
-  height: 180px;
+  height: 276px;
   background: #ECECEC;
 }
 .separator {
