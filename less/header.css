@@ -1,36 +1,36 @@
-.navbar-brand,
-.navbar-nav li a {
-  line-height: 109px;
-  height: 109px;
-}
 .navbar {
+  height: 89px;
   background-color: white;
   border: none;
 }
-.flt-logo {
-  margin-top: 10px;
-  vertical-align: middle;
-  width: 242px;
-  height: auto;
+.navbar-brand {
+  margin-top: 24.5px;
+  padding: 0 0 0 15px;
 }
-.flt-menu-item {
-  width: 106px;
+.flt-menu {
+  padding-left: 270px;
 }
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus {
-  background-color: #c1192a;
-  color: white;
-}
-.navbar-default .navbar-nav > .active > a:hover {
-  background-color: #d81c2f;
-  color: white;
-}
-.flt-menu-icon {
-  padding-right: 5px;
+.flt-menu a {
+  height: 109px;
+  width: 140px;
+  background-color: #c1192a !important;
+  padding-top: 35px !important;
+  color: white !important;
+  font-size: 1.6em;
 }
 .navbar-right {
-  padding-right: 50px;
+  font-size: 1.6em;
+  padding-top: 35px;
 }
-.navbar {
-  margin-bottom: 0;
+.navbar-right a {
+  color: black;
+  text-decoration: underline;
+}
+.registerLink {
+  background-color: #028AA1;
+}
+.registerLink > a {
+  color: white !important;
+  width: 220px;
+  text-decoration: none;
 }

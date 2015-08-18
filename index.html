@@ -15,7 +15,7 @@
 <!--opacity slider-->
 <div class="b-navigator">
     <div class="row">
-       <button class="btn" id="mockupButton">Hide mockup</button>
+        <button class="btn" id="mockupButton">Hide mockup</button>
     </div>
 </div>
 <!--end of opacity slider-->
@@ -35,17 +35,23 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand vcenter" href="#"><img class="img-responsive"  src="Ferdig_design_GFX/Desktop_logo.png" alt=""/></a>
+            <a class="navbar-brand" href="#">
+                <div><img src="Ferdig_design_GFX/Desktop_logo.png" alt=""/></div>
+            </a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
+        <div id="navbaar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active flt-menu-item text-center"><a href="#"><i class="fa fa-bars fa-lg flt-menu-icon"></i>
-                    Meny</a></li>
+                <li class="active flt-menu text-center">
+                    <a href="#" >
+                        <i class="fa fa-bars fa-lg flt-menu-icon"></i>
+                        Meny
+                    </a>
+                </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Sok <i class="fa fa-search fa-lg flt-menu-icon"></i></a></li>
-                <li><a href="#">Min side <i class="fa fa-user fa-lg flt-menu-icon"></i></a></li>
-                <li><a href="#">Blli medlem <i class="fa fa-chevron-circle-right fa-2x"></i></a></li>
+                <li><a href="#">Sok <i class="fa fa-search fa-lg"></i></a></li>
+                <li><a href="#">Min side <i class="fa fa-user fa-lg"></i></a></li>
+                <li class="registerLink"><a href="#">Blli medlem <i class="fa fa-chevron-circle-right fa-lg pull-right"></i></a></li>
             </ul>
         </div>
     </nav>
@@ -204,6 +210,7 @@
         <div class="media flt-student-box">
             <div class="media-body flt-student-body">
                 <h3 class="media-heading "><b>Student? Bli medlem na</b></h3>
+
                 <div class="">
                     <p>Udanning gjennom Addisco er gratis for vare medlemmer. Addisco er et steg videre i utviklingen av
                         FLTs Stotteordning for etter- og videreutdanning.</p>
@@ -250,22 +257,22 @@
 <script>
     $(function () {
         var button = $("#mockupButton");
-        var showing = true;
+        var showing = false;
 
         button.on("click", function () {
             console.log(showing);
             showing = !showing;
-            if(showing)
-            {
+            if (showing) {
                 $(".s").show();
                 button.text("Hide mockup");
             }
-            else
-            {
+            else {
                 $(".s").hide();
                 button.text("Show mockup");
             }
         })
+        $(".s").hide();
+        button.text("Show mockup");
     })
 
 
