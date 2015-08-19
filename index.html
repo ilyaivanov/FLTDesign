@@ -22,6 +22,12 @@
 
                     <div class="input-group-addon">Mockup</div>
                 </div>
+                <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="checkbox" aria-label="123"/>
+                    </span>
+                    <input type="text" class="form-control" aria-label="...">
+                </div>
             </div>
         </form>
     </div>
@@ -218,8 +224,8 @@
             <div class="media-body">
                 <div class="media-heading">Bli medlem na</div>
 
-                    <p>Udanning gjennom Addisco er gratis for vare medlemmer. Addisco er et steg videre i utviklingen av
-                        FLTs Stotteordning for etter- og videreutdanning.</p>
+                <p>Udanning gjennom Addisco er gratis for vare medlemmer. Addisco er et steg videre i utviklingen av
+                    FLTs Stotteordning for etter- og videreutdanning.</p>
             </div>
             <div class="media-right media-middle">
                 <i class="fa fa-chevron-circle-right fa-4x"></i>
@@ -270,7 +276,12 @@
         updateOpacity();
     });
 
-
+    function updateMockMargin () {
+        var width = $(window).width();
+        $(".s").css("margin-left", ( width - 1600) / 2);
+    }
+    updateMockMargin();
+    $(window).resize(updateMockMargin);
 </script>
 </body>
 </html>
