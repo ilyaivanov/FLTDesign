@@ -1,15 +1,91 @@
 @import "variables.less";
+@import "../bower_components/bootstrap/less/mixins/vendor-prefixes.less";
 
-.container-fluid{
+@main-page-content-width: 1170px + @grid-gutter-width;
+
+@main-page-content-margin: (@container-large-desktop - @main-page-content-width) /2;
+
+@main-page-content-padding-top: 48px;
+
+@news-magin-top: 36px;
+
+.container-fluid {
   max-width: @container-large-desktop;
 }
 
 .navbar {
-  border: 0px;
+  font-size: 1.4em;
+  border: 0;
 }
 
-.flt-page-body{
-  padding-top:15px;
-  margin-left: 50px;
-  margin-right: 50px;
+.flt-page-body {
+  padding-top: @main-page-content-padding-top;
+  margin-left: @main-page-content-margin;
+  margin-right: @main-page-content-margin;
+}
+
+.panel {
+  height: 276px;
+  margin-bottom: 36px;
+  border: none;
+  .box-shadow(0 0px 0px rgba(0, 0, 0, 0));
+  border-bottom: none;
+  background-color: lightblue;
+}
+
+hr {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.news-block {
+  margin-top: @news-magin-top;
+  padding-bottom: @news-magin-top;
+}
+
+.news-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #404040;
+  margin-top: -14px;
+  margin-left: -2px;
+}
+
+.list-group-item {
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #C6C6C6;
+  border-bottom: 1px solid #C6C6C6;
+  height: 95px;
+}
+
+.flt-student-box {
+  background-color: #028AA2;
+  margin-top: @news-magin-top + 12;
+
+  height: 180px;
+  color: white;
+
+  .media-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+
+    padding-top: 48px;
+    padding-left: 46px;
+  }
+
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }
+}
+
+.footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #494949;
+  bottom: 0;
+  height: 290px;
 }

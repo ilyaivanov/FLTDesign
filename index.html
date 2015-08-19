@@ -5,6 +5,7 @@
     <title></title>
     <link rel="stylesheet" href="less/bootstrap.css"/>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="less/design-style.css"/>
     <link rel="stylesheet" href="less/flt.css"/>
 </head>
@@ -13,21 +14,26 @@
 <!--opacity slider-->
 <div class="b-navigator">
     <div class="row">
-        <button class="btn" id="mockupButton">Hide mockup</button>
+        <form class="form-inline">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon">HTML</div>
+                    <input class="form-control" id="opacitySlider" type="range" min="0" max="100" value="0"/>
+
+                    <div class="input-group-addon">Mockup</div>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 <!--end of opacity slider-->
 
-<div class="s"><img class="mockimage" src="mockups/Desktop_forside.jpg"></div>
-
-
-
-
-
+<!--<div class="s "><img class="mockimage s img-responsive center-block" src="mockups/Desktop_forside.jpg"></div>-->
+<div class="s"><img class="mockimage" src="mockups/Desktop_forside_px.jpg"></div>
 
 
 <div class="navbar navbar-default ">
-    <div class="container-fluid" >
+    <div class="container-fluid">
         <div class="navbar-header">
             <a href="../" class="navbar-brand"><img src="Ferdig_design_GFX/Desktop_logo.png" alt=""/></a>
             <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
@@ -38,16 +44,19 @@
         </div>
         <div class="navbar-collapse collapse" id="navbar-main">
             <ul class="nav navbar-nav">
-                <li><a href="">Forbundet for Ledelse og Teknikk</a></li>
+                <li><p>Forbundet for</p>
+
+                    <p>Ledelse og Teknikk</p></li>
                 <li class="active">
-                    <a href="../help/">Meny</a>
+                    <a href="../help/"><i class="fa fa-bars"></i> Meny</a>
                 </li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Sok <i class="fa fa-search fa-lg"></i></a></li>
                 <li><a href="#">Min side <i class="fa fa-user fa-lg"></i></a></li>
-                <li class="registerLink"><a href="#">Blli medlem <i class="fa fa-chevron-circle-right fa-lg "></i></a></li>
+                <li class="registerLink"><a href="#">Blli medlem <i class="fa fa-chevron-circle-right fa-lg "></i></a>
+                </li>
             </ul>
 
         </div>
@@ -55,14 +64,7 @@
 </div>
 
 
-
-
-
-
-
-
-
-<div class="container-fluid" >
+<div class="container-fluid">
 
     <!--main page image-->
     <div class="row text-center ">
@@ -72,51 +74,6 @@
 
     <div class="flt-page-body">
         <!--grey boxes-->
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="panel panel-default">
-                    <div class="panel-body flt-panel">
-                        <div>
-                            <div class="text-center"><h4><b>Medlemsfordeler</b></h4></div>
-                        </div>
-                        <div class="separator"></div>
-                        <div class="text-center flt-box-body">
-                            <small>Gratis utdanning, stripend, juridisk, bistand, radgiving, LOfavor og forsikringer.
-                            </small>
-                        </div>
-                        <div class="text-center"><i class="fa fa-chevron-circle-right fa-2x"></i></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="panel panel-default">
-                    <div class="panel-body flt-panel">
-                        <div>
-                            <div class="text-center"><h4><b>Avtaler</b></h4></div>
-                        </div>
-                        <div class="separator"></div>
-                        <div class="text-center flt-box-body">
-                            <small>Avtalene og overenskomstene vi har forhandlet frem for vare medlemmer.</small>
-                        </div>
-                        <div class="text-center"><i class="fa fa-chevron-circle-right fa-2x"></i></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="panel panel-default">
-                    <div class="panel-body flt-panel">
-                        <div>
-                            <div class="text-center"><h4><b>FLT mener</b></h4></div>
-                        </div>
-                        <div class="separator"></div>
-                        <div class="text-center flt-box-body">
-                            <small>Utsplill i media, Forbundsledelsens Blogg.</small>
-                        </div>
-                        <div class="text-center"><i class="fa fa-chevron-circle-right fa-2x"></i></div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="row">
             <div class="col-lg-4">
                 <div class="panel panel-default">
@@ -163,29 +120,72 @@
                     </div>
                 </div>
             </div>
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-body flt-panel">
+                        <div>
+                            <div class="text-center"><h4><b>Medlemsfordeler</b></h4></div>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="text-center flt-box-body">
+                            <small>Gratis utdanning, stripend, juridisk, bistand, radgiving, LOfavor og forsikringer.
+                            </small>
+                        </div>
+                        <div class="text-center"><i class="fa fa-chevron-circle-right fa-2x"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-body flt-panel">
+                        <div>
+                            <div class="text-center"><h4><b>Avtaler</b></h4></div>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="text-center flt-box-body">
+                            <small>Avtalene og overenskomstene vi har forhandlet frem for vare medlemmer.</small>
+                        </div>
+                        <div class="text-center"><i class="fa fa-chevron-circle-right fa-2x"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="panel-body flt-panel">
+                        <div>
+                            <div class="text-center"><h4><b>FLT mener</b></h4></div>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="text-center flt-box-body">
+                            <small>Utsplill i media, Forbundsledelsens Blogg.</small>
+                        </div>
+                        <div class="text-center"><i class="fa fa-chevron-circle-right fa-2x"></i></div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--end of grey boxes-->
 
         <hr/>
 
-        <!--New panel-->
-        <div class="row">
+        <!--News panel-->
+        <div class="row news-block">
             <div class="col-lg-4">
-                <h3><b>Nyheter</b></h3>
+                <p class="news-header">Nyheter</p>
                 <ul class="list-group">
-                    <li class="list-group-item flt-list-item">
+                    <li class="list-group-item">
                         <p>
                             <small><i class="fa fa-calendar"></i> Juni 08, 2015</small>
                         </p>
                         <b>Far alle feriepenger?</b>
                     </li>
-                    <li class="list-group-item flt-list-item">
+                    <li class="list-group-item">
                         <p>
                             <small><i class="fa fa-calendar"></i> Juni 08, 2015</small>
                         </p>
                         <b>Milliardkontrakt til Kvarner Stord</b>
                     </li>
-                    <li class="list-group-item flt-list-item">
+                    <li class="list-group-item">
                         <p>
                             <small><i class="fa fa-calendar"></i> Juni 08, 2015</small>
                         </p>
@@ -201,8 +201,10 @@
                     <h3><b>Utdanning gjennom Adesco</b></h3>
 
                     <p>
-                        Udanning gjennom Addisco er gratis for våre medlemmer. Addisco er et steg videre i utviklingen
-                        av FLTs Støt-teordning for etter- og videreutdanning. Dette selskapet er et datterselskap av FLT
+                        Udanning gjennom Addisco er gratis for våre medlemmer. Addisco er et steg videre i
+                        utviklingen
+                        av FLTs Støt-teordning for etter- og videreutdanning. Dette selskapet er et datterselskap av
+                        FLT
                         og hjelper våre medlemmer til en tryggere og mer interessant jobbutvikling.
                     </p>
                 </div>
@@ -213,13 +215,11 @@
 
         <hr/>
         <div class="media flt-student-box">
-            <div class="media-body flt-student-body">
-                <h3 class="media-heading "><b>Student? Bli medlem na</b></h3>
+            <div class="media-body">
+                <div class="media-heading">Bli medlem na</div>
 
-                <div class="">
                     <p>Udanning gjennom Addisco er gratis for vare medlemmer. Addisco er et steg videre i utviklingen av
                         FLTs Stotteordning for etter- og videreutdanning.</p>
-                </div>
             </div>
             <div class="media-right media-middle">
                 <i class="fa fa-chevron-circle-right fa-4x"></i>
@@ -234,56 +234,41 @@
         </div>
     </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="text-center">
-                <i class="fa flt-icon fa-inverse fa-twitter-square fa-3x"></i>
-                <i class="fa flt-icon fa-inverse fa-instagram fa-3x"></i>
-                <i class="fa flt-icon fa-inverse fa-facebook-square fa-3x"></i>
-                <i class="fa flt-icon fa-inverse fa-google-plus-square fa-3x"></i>
-            </div>
 
-            <ul class="list-group-horizontal text-center" style="display: none;">
-                <li class="list-group-item">Telefon</li>
-                <li class="list-group-item">E-post</li>
-                <li class="list-group-item">Postadresse</li>
-                <li class="list-group-item">Besoksadresse</li>
-            </ul>
-
-        </div>
-
-
-    </footer>
 </div>
+
+<footer class="footer container-fluid">
+    <div class="text-center">
+        <i class="fa flt-icon fa-inverse fa-twitter-square fa-3x"></i>
+        <i class="fa flt-icon fa-inverse fa-instagram fa-3x"></i>
+        <i class="fa flt-icon fa-inverse fa-facebook-square fa-3x"></i>
+        <i class="fa flt-icon fa-inverse fa-google-plus-square fa-3x"></i>
+    </div>
+
+    <ul class="list-group-horizontal text-center" style="display: none;">
+        <li class="list-group-item">Telefon</li>
+        <li class="list-group-item">E-post</li>
+        <li class="list-group-item">Postadresse</li>
+        <li class="list-group-item">Besoksadresse</li>
+    </ul>
+</footer>
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
 <script>
     $(function () {
-        var button = $("#mockupButton");
-        var showing = false;
+        var slider = $("#opacitySlider");
+        var image = $(".mockimage");
 
-        button.on("click", function () {
-            console.log(showing);
-            showing = !showing;
-            if (showing) {
-                $(".s").show();
-                button.text("Hide mockup");
-                $(".navbar").hide();
-                $(".container").hide();
-            }
-            else {
-                $(".s").hide();
-                button.text("Show mockup");
-                $(".navbar").show();
-                $(".container").show();
+        slider.on("input change", updateOpacity);
+        function updateOpacity() {
+            var opacity = slider.val() / 100;
+            image.css("opacity", opacity);
+        }
 
-            }
-        })
-        $(".s").hide();
-        button.text("Show mockup");
-    })
+        updateOpacity();
+    });
 
 
 </script>

@@ -2,10 +2,67 @@
   max-width: 1600px;
 }
 .navbar {
-  border: 0px;
+  font-size: 1.4em;
+  border: 0;
 }
 .flt-page-body {
-  padding-top: 15px;
-  margin-left: 50px;
-  margin-right: 50px;
+  padding-top: 48px;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.panel {
+  height: 276px;
+  margin-bottom: 36px;
+  border: none;
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  border-bottom: none;
+  background-color: lightblue;
+}
+hr {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.news-block {
+  margin-top: 36px;
+  padding-bottom: 36px;
+}
+.news-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #404040;
+  margin-top: -14px;
+  margin-left: -2px;
+}
+.list-group-item {
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid #C6C6C6;
+  border-bottom: 1px solid #C6C6C6;
+  height: 95px;
+}
+.flt-student-box {
+  background-color: #028AA2;
+  margin-top: 48px;
+  height: 180px;
+  color: white;
+}
+.flt-student-box .media-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 48px;
+  padding-left: 46px;
+}
+.flt-student-box p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.footer {
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #494949;
+  bottom: 0;
+  height: 290px;
 }
