@@ -10,15 +10,6 @@
   margin-left: 200px;
   margin-right: 200px;
 }
-.panel {
-  height: 276px;
-  margin-bottom: 36px;
-  border: none;
-  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
-  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
-  border-bottom: none;
-  background-color: lightblue;
-}
 hr {
   margin-top: 12px;
   margin-bottom: 12px;
@@ -77,4 +68,38 @@ hr {
 }
 .registerLink a {
   color: white;
+}
+.flt-panel {
+  font-family: 'Roboto', sans-serif;
+}
+.flt-panel h4 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.flt-panel hr {
+  border-top: 1px solid red;
+  width: 180px;
+}
+.flt-panel .flt-box-body {
+  font-size: 18px;
+}
+.flt-panel i {
+  padding-top: 48px;
+}
+.panel {
+  height: 276px;
+  margin-bottom: 36px;
+  border: none;
+  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  border-bottom: none;
+  background-color: #ECECEC;
+}
+.col-lg-4 > a {
+  text-decoration: none;
+  color: black;
+}
+.col-lg-4 > a:hover i {
+  color: red;
 }
