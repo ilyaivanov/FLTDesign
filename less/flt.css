@@ -18,18 +18,6 @@ hr {
   margin-top: 12px;
   margin-bottom: 12px;
 }
-.news-block {
-  margin-top: 36px;
-  padding-bottom: 36px;
-}
-.news-header {
-  font-family: 'Roboto', sans-serif;
-  font-size: 36px;
-  font-weight: bold;
-  color: #404040;
-  margin-top: -14px;
-  margin-left: -2px;
-}
 .list-group-item {
   border-left: none;
   border-right: none;
@@ -39,7 +27,7 @@ hr {
 }
 .flt-student-box {
   background-color: #028AA2;
-  margin-top: 48px;
+  margin-top: 57px;
   height: 173px;
   color: white;
 }
@@ -152,4 +140,29 @@ hr {
 }
 .right-menu-item:hover {
   color: #272727;
+}
+.news-block {
+  margin-top: 45px;
+  padding-bottom: 45px;
+  font-family: 'Roboto', sans-serif;
+}
+.news-block .list-group-item {
+  padding-left: 0px !important;
+}
+.news-block .news-header {
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  color: #404040;
+  margin-top: -14px;
+  margin-left: -2px;
+}
+.news-block p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.news-block small {
+  font-weight: normal;
+  color: #9b9b9b;
+  font-size: 14px;
 }
