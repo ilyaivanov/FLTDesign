@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Palatino;
+  src: url("../media/texgyrepagella-regular.otf") format("opentype");
+}
 .container-fluid {
   max-width: 1600px;
 }
@@ -96,10 +100,33 @@ hr {
   border-bottom: none;
   background-color: #ECECEC;
 }
+.flt-panel:hover {
+  box-shadow: 0 0 0.8em black;
+}
 .col-lg-4 > a {
   text-decoration: none;
-  color: black;
+  color: #404040;
 }
 .col-lg-4 > a:hover i {
-  color: red;
+  color: #c1182a;
+}
+.loginBox {
+  background-color: #404040;
+  color: white;
+  padding: 20px;
+  padding-top: 40px;
+}
+.loginBox .login-heading {
+  font-family: Palatino;
+  font-size: 24px;
+}
+.loginBox p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+.loginBox:hover {
+  box-shadow: 0 0 0.8em black;
+}
+.loginBox:hover .i {
+  color: #c1182a;
 }
