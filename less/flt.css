@@ -1,0 +1,11 @@
+.container-fluid {
+  max-width: 1600px;
+}
+.navbar {
+  border: 0px;
+}
+.flt-page-body {
+  padding-top: 15px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
