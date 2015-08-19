@@ -45,7 +45,7 @@
         <div class="navbar-collapse collapse" id="navbar-main">
             <ul class="nav navbar-nav">
                 <li class="active">
-                    <a href="../help/"><i class="fa fa-bars"></i> Meny</a>
+                    <a href="#" data-collapse-target="menu"><i class="fa fa-bars"></i> Meny</a>
                 </li>
             </ul>
 
@@ -57,7 +57,8 @@
                 </li>
                 <li>
                     <a href="#" class="right-menu-item">
-                        <div class="right-menu-item">Min side <i class="fa fa-user fa-lg"></i></div>
+                        <div data-collapse-target="login" class="right-menu-item">Min side <i
+                                class="fa fa-user fa-lg"></i></div>
                     </a>
                 </li>
                 <li>
@@ -68,19 +69,58 @@
             </ul>
 
         </div>
+
+
+
     </div>
 </div>
 
 
 <div class="container-fluid">
+    <div class="flt-page-container">
+        <div class="collapse" data-collapse-menu="menu" data-collapse-group="main-menu">
+            <div class="menu-area">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="#">
+                            <div class="top-menu-item">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Menu Item 1</h4>
+                                    </div>
+                                    <div class="media-right">
+                                        <i class="fa fa-chevron-circle-right fa-3x pull-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="#">
+                            <div class="top-menu-item">
+                                <div class="media">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">Menu Item 1</h4>
+                                    </div>
+                                    <div class="media-right">
+                                        <i class="fa fa-chevron-circle-right fa-3x pull-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
 
+                </div>
+            </div>
+        </div>
+    </div>
     <!--main page image-->
     <div class="row text-center ">
         <img class="img-responsive" src="media/main-page.png" alt=""/>
     </div>
     <!--end of main page image-->
 
-    <div class="flt-page-body">
+    <div class="flt-page-body flt-page-container">
         <!--grey boxes-->
         <div class="row">
             <div class="col-lg-4">
@@ -272,6 +312,7 @@
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="js/collapse-menu.js"></script>
 
 <script>
     $(function () {

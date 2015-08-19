@@ -9,10 +9,12 @@
   font-size: 1.4em;
   border: 0;
 }
-.flt-page-body {
-  padding-top: 48px;
+.flt-page-container {
   margin-left: 200px;
   margin-right: 200px;
+}
+.flt-page-body {
+  padding-top: 48px;
 }
 hr {
   margin-top: 12px;
@@ -174,4 +176,19 @@ footer {
 .footer-icon {
   margin-left: 23px;
   margin-right: 23px;
+}
+.top-menu-item {
+  padding: 10px 15px;
+  height: 60px;
+  background-color: #ECECEC;
+  color: black;
+}
+.top-menu-item h4 {
+  font-size: 24px;
+}
+.top-menu-item .media-heading {
+  margin-top: 7px;
+}
+.menu-area {
+  margin: 30px;
 }
