@@ -61,7 +61,10 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Sok <i class="fa fa-search fa-lg"></i></a></li>
                 <li><a href="#">Min side <i class="fa fa-user fa-lg"></i></a></li>
-                <li class="registerLink"><a href="#">Blli medlem <i class="fa fa-chevron-circle-right fa-lg "></i></a>
+                <li>
+                    <div class="registerLink">
+                        <a href="#">Blli medlem <i class="fa fa-chevron-circle-right fa-lg "></i></a>
+                    </div>
                 </li>
             </ul>
 
@@ -276,7 +279,7 @@
         updateOpacity();
     });
 
-    function updateMockMargin () {
+    function updateMockMargin() {
         var width = $(window).width();
         $(".s").css("margin-left", ( width - 1600) / 2);
     }
