@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="less/bootstrap.css"/>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="less/design-style.css"/>
+    <link rel="stylesheet" href="less/flt.css"/>
+</head>
+<body>
+
+<!--opacity slider-->
+<div class="b-navigator">
+    <div class="row">
+        <form class="form-inline">
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon">HTML</div>
+                    <input class="form-control" id="opacitySlider" type="range" min="0" max="100" value="0"/>
+
+                    <div class="input-group-addon">Mockup</div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!--end of opacity slider-->
+
+<!--<div class="s "><img class="mockimage s img-responsive center-block" src="mockups/Desktop_forside.jpg"></div>-->
+<div class="s"><img class="mockimage" src="mockups/Desktop_artikkel.jpg"></div>
+
+
+<div class="navbar navbar-default ">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="../" class="navbar-brand"><img src="media/logo-small.png" alt=""/></a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar-main">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="#" data-collapse-target="menu"><i class="fa fa-bars"></i> Meny</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="flt-page-body flt-page-container">
+        <!--grey boxes-->
+        <h4>Article</h4>
+        <!--end of grey boxes-->
+
+
+    </div>
+
+
+</div>
+
+<footer class="footer container-fluid">
+    <div class="text-center footer-icons">
+        <img class="footer-icon" src="Ferdig_design_GFX/Desktop_icon_facebook.png" alt=""/>
+        <img class="footer-icon" src="Ferdig_design_GFX/Desktop_icon_twitter.png" alt=""/>
+        <img class="footer-icon" src="Ferdig_design_GFX/Desktop_icon_insta.png" alt=""/>
+        <img class="footer-icon" src="Ferdig_design_GFX/Desktop_icon_mail.png" alt=""/>
+        <img class="footer-icon" src="Ferdig_design_GFX/Desktop_icon_print.png" alt=""/>
+    </div>
+
+</footer>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="js/collapse-menu.js"></script>
+
+<script>
+    $(function () {
+        var slider = $("#opacitySlider");
+        var image = $(".mockimage");
+
+        slider.on("input change", updateOpacity);
+        function updateOpacity() {
+            var opacity = slider.val() / 100;
+            image.css("opacity", opacity);
+        }
+
+        updateOpacity();
+    });
+
+    function updateMockMargin() {
+        var width = $(window).width();
+        $(".s").css("margin-left", ( width - 1600) / 2);
+    }
+    updateMockMargin();
+    $(window).resize(updateMockMargin);
+</script>
+</body>
+</html>
