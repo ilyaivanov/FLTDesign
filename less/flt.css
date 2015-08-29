@@ -14,7 +14,7 @@
   margin-right: 200px;
 }
 .flt-page-body {
-  padding-top: 48px;
+  padding-top: 33px;
 }
 hr {
   margin-top: 12px;
@@ -38,13 +38,6 @@ hr {
 .flt-student-box .media-body {
   padding-left: 20px;
   padding-top: 20px;
-}
-.footer {
-  margin-top: 20px;
-  padding-top: 20px;
-  background-color: #494949;
-  bottom: 0;
-  height: 370px;
 }
 .registerLink {
   background-color: #028AA2;
@@ -78,7 +71,7 @@ hr {
 .flt-panel i {
   padding-top: 48px;
 }
-.panel {
+a > .panel {
   height: 276px;
   margin-bottom: 36px;
   border: none;
@@ -191,4 +184,26 @@ footer {
 }
 .menu-area {
   margin: 30px;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 300px;
+}
+.navbar-fixed-bottom {
+  position: absolute;
+  margin-top: 20px;
+}
+.navbar-fixed-bottom .container-fluid {
+  background-color: #494949;
+  height: 300px;
+}
+.breadcrum {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
 }
