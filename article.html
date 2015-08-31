@@ -8,6 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="less/design-style.css"/>
     <link rel="stylesheet" href="less/flt.css"/>
+    <link rel="stylesheet" href="less/article.css"/>
 </head>
 <body>
 
@@ -55,9 +56,56 @@
 
 <div class="container-fluid">
     <div class="flt-page-body flt-page-container">
-        <!--grey boxes-->
-        <h4>Article</h4>
-        <!--end of grey boxes-->
+        <div class="breadcrum">Forsiden / Om FLT / Historikk</div>
+        <div class="row article-body">
+            <div class="col-sm-4 article-sidebar">
+                <div class="article-sidebar-header">Om FLT</div>
+                <div class="panel-group flt-article-navigation" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading collapsed" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h4 class="panel-title">
+                                <a href="#">
+                                    Organisasjon <i class="glyphicon glyphicon-play pull-right"></i>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <ul class="list-group">
+                                <li class="list-group-item"><a href="#">Cras justo odio</a></li>
+                                <li class="list-group-item"><a href="#">Dapibus ac facilisis in</a></li>
+                                <li class="list-group-item"><a href="#">Morbi leo risus</a></li>
+                                <li class="list-group-item"><a href="#">Porta ac consectetur ac</a></li>
+                                <li class="list-group-item"><a href="#">Vestibulum at eros</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="no-style">
+                    <div class="panel panel-default flt-article-campaign">
+                        <div class="panel-body">
+                            <div>
+                                <div class="text-center">
+                                    <div class="campaign-header">
+                                        Kampanje
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center flt-box-body">
+                                <small>Mine forsikringer, selvbetjening, verv og verktoy for tillitsvalgte.</small>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-8">
+                <div class="article-header">Historikk</div>
+                <p>Publisert: Juni 08, 2015</p>
+                <div>
+
+                </div>
+            </div>
+        </div>
 
 
     </div>
@@ -65,16 +113,24 @@
 
 </div>
 
-<footer class="footer container-fluid">
-    <div class="text-center footer-icons">
-        <img class="footer-icon" src="Ferdig_design_GFX/Desktop_icon_facebook.png" alt=""/>
-        <img class="footer-icon" src="Ferdig_design_GFX/Desktop_icon_twitter.png" alt=""/>
-        <img class="footer-icon" src="Ferdig_design_GFX/Desktop_icon_insta.png" alt=""/>
-        <img class="footer-icon" src="Ferdig_design_GFX/Desktop_icon_mail.png" alt=""/>
-        <img class="footer-icon" src="Ferdig_design_GFX/Desktop_icon_print.png" alt=""/>
+<div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid">
+        <div class="text-center footer-icons">
+            <div>
+                <img class="footer-icon"
+                     src="<?php echo esc_url(get_template_directory_uri()); ?>/media/Desktop_icon_facebook.png" alt=""/>
+                <img class="footer-icon"
+                     src="<?php echo esc_url(get_template_directory_uri()); ?>/media/Desktop_icon_twitter.png" alt=""/>
+                <img class="footer-icon"
+                     src="<?php echo esc_url(get_template_directory_uri()); ?>/media/Desktop_icon_insta.png" alt=""/>
+                <img class="footer-icon"
+                     src="<?php echo esc_url(get_template_directory_uri()); ?>/media/Desktop_icon_mail.png" alt=""/>
+                <img class="footer-icon"
+                     src="<?php echo esc_url(get_template_directory_uri()); ?>/media/Desktop_icon_print.png" alt=""/>
+            </div>
+        </div>
     </div>
-
-</footer>
+</div>
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
