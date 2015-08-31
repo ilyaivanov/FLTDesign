@@ -2,9 +2,6 @@
   font-family: Palatino;
   src: url("../media/texgyrepagella-regular.otf") format("opentype");
 }
-.container-fluid {
-  max-width: 1600px;
-}
 .navbar {
   font-size: 1.4em;
   border: 0;
@@ -191,4 +188,17 @@ footer {
 }
 .menu-area {
   margin: 30px;
+}
+.image {
+  margin: 0 auto;
+}
+.linkBox {
+  width: 370px;
+  height: 350px;
+  display: inline-block;
+}
+.links {
+  margin: 0 auto;
+  max-width: 1170px;
+  text-align: center;
 }
